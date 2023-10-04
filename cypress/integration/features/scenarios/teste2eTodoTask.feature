@@ -30,13 +30,13 @@ Feature: Rellenar datos en la aplicacón web Gestionar Tareas
   @done
   Scenario: Rellenar el formulario de Adicionar tarea con el campo Título en blanco con mensaje de error
     When introduzco valores al campo Título
-    Then debo ver el mensaje "Please enter your phone number" en el campo Título
+    Then debo ver el mensaje "Por favor ingresar Título" en el campo Título
     Then debo ver el botón Submit deshabilitado
 
   @done
   Scenario: Rellenar el formulario de Adicionar tarea con el campo Descripción en blanco con mensaje de error
     When introduzco valores al campo Descripción
-    Then debo ver el mensaje "Please enter your phone number" en el campo Descripción
+    Then debo ver el mensaje "Por favor ingresar Descripción" en el campo Descripción
     Then debo ver el botón Submit deshabilitado
 
   @done
