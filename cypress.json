@@ -1,0 +1,37 @@
+{
+  "baseUrl": "http://profile:4000/",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "cypress/reporter-config.json"
+  },
+  "testFiles": "features/scenarios/*.{feature,features,ts}",
+  "ignoreTestFiles": "*.js",
+  "fixturesFolder": "cypress/fixtures",
+  "defaultCommandTimeout": 100000,
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "watchForFileChanges": true,
+  "chromeWebSecurity": false,
+  "waitForAnimation": true,
+  "animationDistanceThreshold": 20,
+  "execTimeout": 100000,
+  "pageLoadTimeout": 90000,
+  "requestTimeout": 15000,
+  "responseTimeout": 100000,
+  "experimentalSessionAndOrigin": true,
+  "experimentalMemoryManagement": true,
+  "cacheAcrossSpecs": true,
+  "numTestsKeptInMemory": 0,
+  "testIsolation": false,
+  "experimentalSourceRewriting": true,
+  "projectId": "dvw51k",
+  "video": false,
+  "videoCompression": 32,
+  "videoUploadOnPasses": false,
+  "screenshotOnRunFailure": false,
+  "preserveOriginalScreenshot": false,
+  "retries": {
+    "runMode": 2,
+    "openMode": 3
+  }
+}

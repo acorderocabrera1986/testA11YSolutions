@@ -1,0 +1,19 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "https://www.google.com/",
+    "types": ["cypress"],
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "lib": ["es6", "dom", "es2017"]
+  },
+  "exclude": ["node_modules"],
+  "include": [
+    "cypress/integration/features/**/*.*",
+    "cypress/support/*.ts",
+    "cypress/node_modules/cypress-file-upload"
+  ]
+}
