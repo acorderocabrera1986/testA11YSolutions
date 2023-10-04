@@ -2,9 +2,29 @@ let isDeleteButton;
 let count = 0;
 
 class CommonUtils {
-  
+
   static clickInElement(selector: string) {
     cy.get(selector).click({ force: true });
+  }
+
+  static clickInFirstElementOnTask(selector: string) {
+    cy.get(selector).eq(0).click({ force: true });
+  }
+
+  static seeDataList(selector: string) {
+    cy.get(selector).click({ force: true });
+  }
+
+  static checkIfButtonIsDidable(selector: string) {
+    cy.get(selector).should('be.disabled')
+  }
+
+  static notSeeTask(titleTask: string) {
+    cy.get(titleTask).should('not.be.visible')
+  }
+
+  static deleteDataField(selector: string) {
+    cy.get(selector).type('{selectall}{backspace}')
   }
 
   static setInputValue(selector: string, value: string) {
@@ -48,7 +68,8 @@ class CommonUtils {
   }
 
   static visitUrl(urlApp: string) {
-    cy.visit(urlApp);   
+    cy.visit(urlApp);
   }
- }
+}
+
 export default CommonUtils;
